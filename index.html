@@ -1,0 +1,112 @@
+<!DOCTYPE html>
+<html lang="en" >
+<head>
+  <meta charset="UTF-8">
+  <title>Feedbacks</title>
+  
+
+</head>
+<body>
+<!-- partial:index.partial.html -->
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset= UTF-8>
+    <title>Feedbacks</title>
+     <style>
+    body{background-color:white;
+       padding:30px;
+      font-size:24px;
+       }
+       form {
+      width: 100%;
+      max-width: 600px;
+      margin: auto;
+      padding: 20px;
+      border: 2px solid black ;
+      border-radius: 8px ; 
+      background-color:lavender;
+    }
+       h2{color:#556B2F;
+       font-size:40px;}
+       
+      textarea {
+  resize: both;}
+        ul{list-style-type:none;
+      margin:10px;
+      padding:20px;
+      background-color:pink;}
+      
+      li{display:inline;}
+      
+      li a{padding:10px;
+      text-decoration:none;
+      color:black}
+      
+      li a:hover {background-color:white;}
+      footer {
+        border: 0;
+        border-top: 2px solid brown; 
+        margin: 50px 0;font-size:21px;}
+       li a.active {
+  background-color: brown;
+  color: white;
+  
+  </style>  
+</head>  
+  
+ <body>
+   <h2>👑CUSTOMER IS OUR KING👑</h2><br>
+   <p><b>We Value Your Feedback!</b><br><br>
+We believe that customer satisfaction is at the heart of our business. Your reviews and feedback help us improve and continue to provide delicious treats that you love. Whether you’ve enjoyed a custom cake for a special occasion or indulged in our daily fresh bakes, we’d love to hear your thoughts. Share your experience with us and let others know how we’ve made your celebrations sweeter! Thank you for supporting Christine’s Tasty Treats. We can’t wait to serve you again!</p>
+    <br><br><br>
+     Leave your reviews and feedbacks in the below feedback sheet.</body><br><br>
+<form id=feedbackForm>
+   <label for="name">Name</label> 
+      <input type="text" id="name"><br><br>
+
+      <label>How about your opinion on our product?</label><br><br>
+      
+      <label for="perfect">Perfect</label>
+      <input type="radio" id="perfect" name="product_opinion"><br><br>
+      
+      <label for="very-good">Very Good</label>
+      <input type="radio" id="very-good" name="product_opinion"><br><br>
+      
+      <label for="good">Good</label>
+      <input type="radio" id="good" name="product_opinion"><br><br>
+      
+      <label for="average">Average</label>
+      <input type="radio" id="average" name="product_opinion"><br><br>
+      
+      <label for="bad">Bad</label>
+      <input type="radio" id="bad" name="product_opinion"><br><br>
+      
+      <label for="verybad">Very Bad</label>
+      <input type="radio" id="verybad" name="product_opinion"><br><br>
+      
+      <label for="feedback">Please add your comments, feedback, and ideas to improve our quality</label> 
+      <textarea id="feedback" name="feedback" required placeholder="Enter your comments here..."></textarea><br><br>
+  <input type=submit value=submit><br><br><br>
+   <div id="thankyouMessage"></div>
+  </form>
+      
+     <script>
+  document.getElementById('feedbackForm').addEventListener('submit', function(event) {
+    event.preventDefault();  
+
+    
+    var name = document.getElementById('name').value;
+
+    
+    var thankyouMessage = document.getElementById('thankyouMessage');
+thankyouMessage.textContent = 'Thank you for your feedback, ' + name + ' ❤️😊';});
+       
+</script>
+    
+  </body>
+</html>
+<!-- partial -->
+  
+</body>
+</html>
